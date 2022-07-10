@@ -19,8 +19,10 @@ Postoje četri osnovna koraka, koja je potrebno ispuniti kako bi konfigurisali �
 4. Monitoring okvira i poruka koji se šalju/primaju
 
 Kada je u pitanju slanje i generisanje frejmova, na veoma jednostavan način uz pomoć softverskog okruženja možemo generisati CAN frejm, sa svim parametrima koje čine ovu komunikaciju jedinstvenom. Nama su od interesa Transmissed message, gdje je prije svega potrebno napraviti jedan DBF fajl na osnovu kojeg ćemo generisati, konfigurisati i poslati podatak. 
+
 Database (`.dbf`) je standardna biblioteka podataka koju koriste aplikacije za upravljanje bazama podataka. One zapravo organizuju podatke u više zapisa sa poljima, koje čuvaju u odgovarajućem nizu podataka. Ovaj tip baze je kompatabilan i sa drugim vrstama podataka, a ovaj program omogućava njihvu konverziju u drugi tip (na primjer `.dbc`) ili obrnuto, iz neke druge vrste podatak u .dbf fajl. Obično, ova vrsta podataka je više dostupna čitaocima, te je na taj način jasnije za razumijevanje poruka, pa samim tim i detekciju grešaka.
 Pored Transmissed message, možemo generisati neku vrstu signala, a zatim je poslati nekom udaljenom čvoru (u našem slučaju slave uređadj je RPi). 
+
 Naravno, osim slanja moguće je i logovanje/prijem poruka, to jeste da naš softver bude slave uređaj.
 Ovaj program, u posljednjim ažuriranjima ima opciju da preko GUIa na jednostavan način generišete _Node simulaciju_. Klasa podataka kojoj pristupate za ovaj vid komunikacije je prikazana na sledećoj slici:
 

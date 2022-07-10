@@ -1,0 +1,21 @@
+//******************************BUSMASTER Messages and signals Database ******************************//
+
+[DATABASE_VERSION] 1.3
+
+[PROTOCOL] CAN
+
+[BUSMASTER_VERSION] [3.2.2]
+
+[NUMBER_OF_MESSAGES] 1
+
+[START_MSG] control_message,291,8,7,1,X
+[START_SIGNALS] Prestage_state,1,3,0,B,1,0,1,0.000000,1.000000,,
+[VALUE_DESCRIPTION] Switched on ,1
+[VALUE_DESCRIPTION] switched off,0
+[START_SIGNALS] Contorol_counter,4,2,0,U,15,0,1,0.000000,1.000000,,
+[START_SIGNALS] Plus,1,2,6,B,1,0,1,0.000000,1.000000,,
+[START_SIGNALS] Minus,1,2,7,B,1,0,1,0.000000,1.000000,,
+[START_SIGNALS] Meas_enable,1,2,4,B,1,0,1,0.000000,1.000000,,
+[START_SIGNALS] Fuse_state,1,2,5,B,1,0,1,0.000000,1.000000,,
+[START_SIGNALS] Ctrl_crc,8,1,0,U,255,0,1,0.000000,1.000000,,
+[END_MSG]

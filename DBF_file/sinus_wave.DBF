@@ -1,0 +1,13 @@
+//******************************BUSMASTER Messages and signals Database ******************************//
+
+[DATABASE_VERSION] 1.3
+
+[PROTOCOL] CAN
+
+[BUSMASTER_VERSION] [3.2.2]
+
+[NUMBER_OF_MESSAGES] 1
+
+[START_MSG] sinus_wave_generator,52,1,1,1,S
+[START_SIGNALS] sinus_wave_generator,8,1,0,I,127,-128,1,0.000000,1.000000,,
+[END_MSG]

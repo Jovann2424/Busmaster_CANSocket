@@ -61,7 +61,7 @@ ako se radi o verziji Linux kernela >= 4.4.x:
 
 ```dtparam=spi=on
 dtoverlay=mcp2515-can2-overlay,oscillator=10000000,spimaxfrequency=1000000,interrupt=25
-dtoverlay=spi-bcm2835-overlay```
+dtoverlay=spi-bcm2835-overlay`
 
 Važno je napomenuti da prilikom kroskompajliranja bilo koje aplikacije koja sadrži _<math.h>_ biblioteku  na Linux platformi, prilikom linkovanja mora dodati ekstenzija `-lm`.
 

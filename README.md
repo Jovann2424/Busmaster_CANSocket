@@ -63,6 +63,14 @@ ako se radi o verziji Linux kernela >= 4.4.x:
 dtoverlay=mcp2515-can2-overlay,oscillator=10000000,spimaxfrequency=1000000,interrupt=25
 dtoverlay=spi-bcm2835-overlay``
 
+Nakon što je prethodnom provjerom potvrđeno da je CAN kontroler uspješno inicijalizovan, sljedeći korak podrazumijeva aktiviranje CAN interefejsa. Ovo se postiže istim komandama kao kada se radi sa klasičnim mrežnim interfejsima.
+
+```
+sudo ip link set can0 up type can bitrate 125000	# enable interface
+ip link show dev can0						    	# print info
+sudo ip link set can0 down      					# disable interface
+
+```
 
 Važno je napomenuti da prilikom kroskompajliranja bilo koje aplikacije koja sadrži _<math.h>_ biblioteku  na Linux platformi, prilikom linkovanja mora dodati ekstenzija `-lm`.
 

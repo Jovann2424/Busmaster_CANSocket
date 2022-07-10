@@ -24,7 +24,7 @@ Pored Transmissed message, možemo generisati neku vrstu signala, a zatim je pos
 Naravno, osim slanja moguće je i logovanje/prijem poruka, to jeste da naš softver bude slave uređaj.
 Ovaj program, u posljednjim ažuriranjima ima opciju da preko GUIa na jednostavan način generišete _Node simulaciju_. Klasa podataka kojoj pristupate za ovaj vid komunikacije je prikazana na sledećoj slici:
 
-![Screenshot_1](https://user-images.githubusercontent.com/73527927/178165789-c2ca62f4-a61e-4d91-b1e8-bfe37558c6ab.png)Na 
+![Screenshot_1](https://user-images.githubusercontent.com/73527927/178165789-c2ca62f4-a61e-4d91-b1e8-bfe37558c6ab.png)
 
 Na ovaj način možemo jednostavno deklasirisati poruke koje šaljemo.
 Sve ovo je detaljnije objašnjeno, sa jasno definisanim koracima u PDF fajlu [help.pdf](https://raw.githubusercontent.com/rbei-etas/busmaster-documents/master/help.pdf)
@@ -52,10 +52,10 @@ Ovaj fajl treba editovati komandom:
  
  zatim unijeti sledeće linije:
  
- ```dtparam=spi=on
-dtoverlay=mcp2515-can2,oscillator=10000000,spimaxfrequency=1000000,interrupt=25```
+ `dtparam=spi=on
+dtoverlay=mcp2515-can2,oscillator=10000000,spimaxfrequency=1000000,interrupt=25`
 
-ako se radi o verziji Linux kernela >= 4.4.x, 
+ako se radi o verziji Linux kernela >= 4.4.x:
 
 ```dtparam=spi=on
 dtoverlay=mcp2515-can2-overlay,oscillator=10000000,spimaxfrequency=1000000,interrupt=25
